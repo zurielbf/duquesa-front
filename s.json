@@ -1,0 +1,43 @@
+{
+    "transaction_id": 1,
+    "user": {
+        "user_name": "juanito",
+        "user_id": 121232323,
+    },
+    "sales": {
+        "sale_detail": {
+            "service_id": 5,
+            "service_name": "service name",
+            "service_amount": 100,
+
+            "additional_services": {
+                "additional_service_id": 5,
+                "additional_service_name": "aditional name",
+                "additional_service_amount": 100
+            },
+        },
+    },
+    "total_amount": 150,
+    "registration_timestamp": "2022-10-10T08:40:00",
+},
+
+{
+    "transaction_id": 1,
+    "user": {
+        "user_name": "juanito",
+        "user_id": 121232323,
+    },
+    "services": {
+        "service_id": 5,
+        "service_name": "service name",
+        "service_amount": 100,
+
+        "additional_services": {
+            "additional_service_id": 5,
+            "additional_service_name": "aditional name",
+            "additional_service_amount": 100,
+        },
+    },
+    "total_amount": 150,
+    "registration_timestamp": "2022-10-10T08:40:00",
+}

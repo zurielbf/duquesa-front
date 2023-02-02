@@ -1,0 +1,234 @@
+@import 'variables.scss';
+
+.light {
+    font-weight: $light !important;
+}
+
+.regular {
+    font-weight: $regular !important;
+}
+
+.semibold {
+    font-weight: $semibold !important;
+}
+
+.bold {
+    font-weight: $bold !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1;
+    margin: 0px;
+    letter-spacing: .5;
+}
+
+.encabezado {
+    font-size: $encabezado !important;
+
+    /* @media only screen and (min-width : $lg-desktop) {
+        font-size: calc(#{$encabezado} * 1.5) !important;
+    }*/
+
+    @media only screen and (max-width: $mobile) {
+        font-size: calc(#{$encabezado} / 1.4) !important;
+    }
+}
+
+.titulo {
+    font-size: $titulo !important;
+
+    /* @media only screen and (min-width : $lg-desktop) {
+        font-size: calc(#{$titulo} * 1.5) !important;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        font-size: calc(#{$titulo} / 2) !important;
+    } */
+}
+
+.subtitulo {
+    font-size: $subtitulo !important;
+
+    /* @media only screen and (min-width : $lg-desktop) {
+        font-size: calc(#{$subtitulo} * 1.2) !important;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        font-size: calc(#{$subtitulo} / 1.2) !important;
+    } */
+}
+
+.texto {
+    font-size: $texto !important;
+
+    /*  @media only screen and (min-width : $lg-desktop) {
+        font-size: calc(#{$texto} * 1.5) !important;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        font-size: calc(#{$texto} / 2) !important;
+    } */
+}
+
+.texto-sm {
+    font-size: $texto-sm !important;
+
+    /*  @media only screen and (min-width : $lg-desktop) {
+        font-size: calc(#{$texto} * 1.5) !important;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        font-size: calc(#{$texto} / 2) !important;
+    } */
+}
+
+.txt-primary {
+    color: $primary !important;
+}
+
+.txt-secondary {
+    color: $secondary !important;
+}
+
+.txt-neutral {
+    color: $neutral !important;
+}
+
+//Background colors
+.bg--primary {
+    background-color: $primary !important;
+}
+
+.bg--secondary {
+    background-color: $secondary !important;
+}
+
+.bg--neutral {
+    background-color: $neutral !important;
+}
+
+//Misc colors
+.txt-white {
+    color: white !important;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.txt-black {
+    color: black !important;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+//ESTILOS DE BOTONES
+.btn--primary {
+    display: block;
+    background-color: $primary !important;
+    padding: 20px 50px !important;
+    border-radius: 30px !important;
+    cursor: pointer;
+    position: relative;
+
+    @media only screen and (max-width: $mobile) {
+        padding: 20px 20px !important;
+    }
+
+    a,
+    span {
+        color: white !important;
+    }
+
+    &:hover {
+        background-color: white !important;
+        border: 1px solid $primary !important;
+
+        a,
+        span {
+            color: $primary !important;
+        }
+    }
+}
+
+.btn--secondary {
+    display: block;
+    background-color: $secondary !important;
+    padding: 20px 50px !important;
+    border-radius: 30px !important;
+    cursor: pointer;
+
+    @media only screen and (max-width: $mobile) {
+        padding: 20px 20px !important;
+    }
+
+    a,
+    span {
+        color: white !important;
+    }
+}
+
+.btn--white {
+    display: block;
+    background-color: white !important;
+    padding: 20px 50px !important;
+    border-radius: 30px !important;
+    cursor: pointer;
+
+    @media only screen and (max-width: $mobile) {
+        padding: 20px 20px !important;
+    }
+
+    a,
+    span {
+        color: $primary !important;
+    }
+}
+
+.btn--outline {
+    display: block;
+    background-color: transparent !important;
+    padding: 10px 50px !important;
+    border-radius: 30px !important;
+    border: 1px solid $primary !important;
+    cursor: pointer;
+
+    @media only screen and (max-width: $mobile) {
+        padding: 20px 20px !important;
+    }
+
+    a,
+    span {
+        color: $primary !important;
+    }
+
+    &:hover {
+        background-color: $primary !important;
+
+        a,
+        span {
+            color: white !important;
+        }
+    }
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.v-alert {
+    position: fixed !important;
+    right: 0%;
+    top: 130px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    margin: 0 auto;  // Without this the box extends the width of the page
+  }
