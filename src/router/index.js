@@ -6,6 +6,7 @@ import AdminSales from "../views/admin/Sales.vue";
 import AdminReports from "../views/admin/Reports.vue";
 import AdminSettings from "../views/admin/Settings.vue";
 import AdminServices from "../views/admin/Services.vue";
+import AdminComisions from "@/views/admin/Comisions.vue";
 
 Vue.use(VueRouter);
 
@@ -58,6 +59,12 @@ const routes = [
         /* webpackChunkName: "about" */ "../views/auth/LoginView.vue"
       );
     },
+  },
+  {
+    path: "/comisions",
+    props: true,
+    name: "comisions",
+    component: AdminComisions,
   },
 ];
 

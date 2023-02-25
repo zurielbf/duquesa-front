@@ -1,21 +1,15 @@
 <template>
-    <div id="AdminUsers">
-        
-        
-    </div>
+  <div id="AdminUsers"></div>
 </template>
 
 <script>
+export default {
+  name: "AdminUsers",
 
-    export default {
-        name: "AdminUsers",
+  components: {},
 
-        components : {
-            
-        },
-
-        data: () => ({
-            //
-        }),
-    };
+  data: () => ({
+    //
+  }),
+};
 </script>
